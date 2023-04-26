@@ -2,22 +2,16 @@
 
 Example of setting up a Remix app that will be deployed to Vercel from inside a Turborepo monorepo.
 
-## Preview
-
-Open this example on [CodeSandbox](https://codesandbox.com):
-
-<!-- TODO: update this link to the path for your example: -->
-
-[![Open in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/remix-run/examples/tree/main/turborepo-vercel)
-
-## Example
-
-In order for this to work, your Vercel config should look like this:
-
-build command:
+## Development
 
 ```sh
-cd ../.. && npx turbo run build --scope=low-code --include-dependencies --no-deps
-```
+pnpm install
 
-![Vercel project config](./vercel-project-config-example.jpg)
+# 初始化数据库
+cd packages/prisma
+npx prisma migrate dev --name init 
+pnpm run db:generate
+
+# 启动服务
+pnpm run dev
+```

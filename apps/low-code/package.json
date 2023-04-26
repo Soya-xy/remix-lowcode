@@ -15,7 +15,8 @@
     "@remix-run/vercel": "~1.14.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "workspace:*"
+    "ui": "workspace:*",
+    "db": "workspace:*"
   },
   "devDependencies": {
     "@remix-run/dev": "~1.14.2",

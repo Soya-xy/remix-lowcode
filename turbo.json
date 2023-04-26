@@ -1,6 +1,5 @@
 {
   "$schema": "https://turborepo.org/schema.json",
-  "baseBranch": "origin/main",
   "pipeline": {
     "build": {
       "outputs": [
@@ -9,11 +8,13 @@
         "public/dist/**"
       ],
       "dependsOn": [
+        "^db:generate",
         "^build"
       ]
     },
     "low-code#build": {
       "dependsOn": [
+        "^db:generate",
         "^build"
       ],
       "outputs": [
@@ -40,6 +41,15 @@
       ]
     },
     "dev": {
+      "dependsOn": [
+        "^db:generate"
+      ],
+      "cache": false
+    },
+    "db:generate": {
+      "cache": false
+    },
+    "db:push": {
       "cache": false
     }
   }
