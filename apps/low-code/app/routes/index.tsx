@@ -1,6 +1,8 @@
 import { useFetcher } from '@remix-run/react'
 import { useState } from 'react'
-import { Button } from 'materials'
+import { Button, allMaterial } from 'materials'
+
+console.log('🚀 ~ file: index.tsx:4 ~ allMaterial:', allMaterial)
 
 export default function Index() {
   const fetcher = useFetcher()

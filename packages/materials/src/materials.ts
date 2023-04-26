@@ -1,4 +1,5 @@
-export default {
+
+export const allMaterial = {
   "antd": [
     {
       "fileName": "Button",

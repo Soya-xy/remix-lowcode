@@ -2,7 +2,8 @@
 module.exports = {
   extends: ['@antfu'],
   rules: {
-    semi: [2, 'never'],
+    'semi': [2, 'never'],
+    'no-console': 'off',
   },
   ignorePatterns: ['*.json'],
 }
