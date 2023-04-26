@@ -1,12 +1,13 @@
 import { join, resolve } from 'pathe'
 import fs from 'fs-extra'
 
-const needMaterials = ['antd', 'basic']
+const needMaterials = ['antd-components', 'basic']
 
 const exportCode = {
-  antd: [],
-  basic: [],
+  'antd-components': [],
+  'basic': [],
 }
+
 needMaterials.forEach((material) => {
   const files = fs.readdirSync(resolve(`src/${material}`))
   files.forEach((file: string) => {

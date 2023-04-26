@@ -1,8 +1,8 @@
 
 export const allMaterial = {
-  "antd": [
+  "antd-components": [
     {
-      "fileName": "Button",
+      "fileName": "LdButton",
       "name": "按钮"
     }
   ],

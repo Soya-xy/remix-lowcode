@@ -25,6 +25,9 @@
         "./app/*"
       ]
     },
+    "types": [
+      "antd"
+    ],
     // Remix takes care of building everything in `remix build`.
     "noEmit": true
   }

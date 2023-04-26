@@ -1,18 +1,14 @@
-import { useFetcher } from '@remix-run/react'
-import { useState } from 'react'
-import { Button, allMaterial } from 'materials'
-
-console.log('🚀 ~ file: index.tsx:4 ~ allMaterial:', allMaterial)
+import { useSearchParams } from '@remix-run/react'
+import Layout from '~/components/layout'
 
 export default function Index() {
-  const fetcher = useFetcher()
-  const [name, setName] = useState('Name')
+  const [searchParams, setSearchParams] = useSearchParams()
+  const isEdit = searchParams.get('isEdit') === '1'
   return (
-    <div>
-      <h1>{name}</h1>
-      <main>
-        <Button onClick={() => setName('Hello')}>Test</Button>
-      </main>
-    </div>
+    isEdit
+      ? <Layout>
+        Content Here
+      </Layout>
+      : <div>hello world</div>
   )
 }

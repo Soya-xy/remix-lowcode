@@ -36,6 +36,7 @@ importers:
       '@unocss/transformer-variant-group': ^0.51.8
       db: workspace:*
       eslint: ^8.27.0
+      eslint-plugin-react-hooks: ^4.6.0
       express: ^4.18.2
       materials: workspace:*
       npm-run-all: ^4.1.5
@@ -67,6 +68,7 @@ importers:
       '@unocss/transformer-attributify-jsx': 0.51.8
       '@unocss/transformer-variant-group': 0.51.8
       eslint: 8.39.0
+      eslint-plugin-react-hooks: 4.6.0_eslint@8.39.0
       express: 4.18.2
       npm-run-all: 4.1.5
       typescript: 4.9.5
@@ -99,7 +101,6 @@ importers:
       eslint-plugin-react-refresh: ^0.3.4
       esno: ^0.16.3
       fs-extra: ^11.1.1
-      pathe: ^1.1.0
       react: ^18.2.0
       react-dom: ^18.2.0
       typescript: ^5.0.2
@@ -119,7 +120,6 @@ importers:
       eslint-plugin-react-refresh: 0.3.4_eslint@8.39.0
       esno: 0.16.3
       fs-extra: 11.1.1
-      pathe: 1.1.0
       typescript: 5.0.4
       vite: 4.3.2
 
