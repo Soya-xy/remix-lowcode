@@ -1,4 +1,4 @@
-import { Layout } from 'antd'
+import { Layout } from 'materials'
 
 const { Content: AContent } = Layout
 export default function Content({ children, className }: { children?: React.ReactNode; className?: string }) {
