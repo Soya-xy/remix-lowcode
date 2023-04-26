@@ -27,6 +27,7 @@
     "unocss": "^0.51.8"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.38.5",
     "@iconify-json/mdi": "^1.1.50",
     "@remix-run/dev": "~1.14.2",
     "@remix-run/eslint-config": "~1.14.2",

@@ -1,8 +1,8 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  extends: ["@remix-run/eslint-config", "@remix-run/eslint-config/node"],
+  extends: ['@antfu'],
   rules: {
-    "semi": [2, "never"],
+    semi: [2, 'never'],
   },
-  ignorePatterns: ["*.json"],
+  ignorePatterns: ['*.json'],
 }
