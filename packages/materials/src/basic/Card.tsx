@@ -1,4 +1,3 @@
-import React from 'react'
 import { mapComponent } from '../utils'
 
 export const compontendName = '卡片'
