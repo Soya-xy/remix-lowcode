@@ -1,6 +1,5 @@
-const path = require("node:path")
-
-const glob = require("glob")
+import path from "node:path"
+import glob from "glob"
 
 const packages = glob
   .sync("packages/**/package.json", {
@@ -8,7 +7,7 @@ const packages = glob
     ignore: ["**/node_modules/**"],
     absolute: true,
   })
-  .map((pkg: string) => path.dirname(pkg))
+  .map((pkg) => path.dirname(pkg))
 
 /**
  * @type {import('@remix-run/dev').AppConfig}

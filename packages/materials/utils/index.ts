@@ -19,6 +19,6 @@ needMaterials.forEach((material) => {
   })
 })
 
-fs.writeFileSync(resolve(`src/materials.ts`), `
+fs.writeFileSync(resolve('src/materials.ts'), `
 export const allMaterial = ${JSON.stringify(exportCode, null, 2)}
 `)

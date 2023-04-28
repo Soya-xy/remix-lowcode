@@ -1,10 +1,12 @@
-import { mapComponent } from "../utils";
-export const compontendName = "卡片"
+import React from 'react'
+import { mapComponent } from '../utils'
+
+export const compontendName = '卡片'
 
 function NCard() {
-  return <>
+  return (
     <div>Card</div>
-  </>
+  )
 }
 
 export const Card = mapComponent(NCard, { title: 'children' })

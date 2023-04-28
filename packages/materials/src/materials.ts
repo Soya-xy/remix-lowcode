@@ -1,15 +1,14 @@
-
 export const allMaterial = {
-  "antd-components": [
+  'antd-components': [
     {
-      "fileName": "LdButton",
-      "name": "按钮"
-    }
+      fileName: 'LdButton',
+      name: '按钮',
+    },
   ],
-  "basic": [
+  'basic': [
     {
-      "fileName": "Card",
-      "name": "卡片"
-    }
-  ]
+      fileName: 'Card',
+      name: '卡片',
+    },
+  ],
 }
